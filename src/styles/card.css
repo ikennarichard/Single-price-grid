@@ -1,9 +1,10 @@
 main {
-    background-color: var(--light-gray);
-    width: fit-content;
-    padding: .7em 1em;
+    width: 100%;
+    height: 100%;
+    padding: .7em 0;
     display: grid;
     text-align: left;
+    
 }
 
 
@@ -15,12 +16,15 @@ main {
     }
     
     @media (min-width:600px) {
+
+
         main {
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
             "top top"
             "center footer";
-            
+            /* margin-inline: auto; */
+            max-width: 650px;
         }
 
 
@@ -28,13 +32,12 @@ main {
             padding: 2em 2em;
             margin: 0;
             width: 100%;   
-            max-width: 650px;
-           
         }
         
         .top {
             grid-area: top;
             box-shadow: 1px 2px 7px rgba(128, 128, 128, 0.429);
+            /* width: max-content; */
         }
 
         .footer_section {

@@ -18,10 +18,11 @@
 
 body {
     display: grid;
-    place-items: center;
+    place-content: center;
     min-height: 100vh;
     font-size: 1rem;
     font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
 }
 
 
